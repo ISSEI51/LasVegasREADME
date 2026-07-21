@@ -32,7 +32,7 @@ Run it in the root of the project you want to ruin:
 
 ```bash
 cd ~/dev/RaidCoder
-npx @GITHUB_USERNAME/readme-casino
+npx @issei51/las-vegas-readme
 ```
 
 That is the entire interface. There are no subcommands, no flags, and no config file.
@@ -119,15 +119,15 @@ Every run rolls new numbers and a new (always winning) slot result.
 
 This package is published to the **GitHub Packages npm registry**, which only
 serves scoped packages. The scope must match the repository owner: a package
-named `@GITHUB_USERNAME/readme-casino` can only be published from the
-`GITHUB_USERNAME` account or organisation. Replace `GITHUB_USERNAME` everywhere
+named `@issei51/las-vegas-readme` can only be published from the
+`ISSEI51` account or organisation. Replace `ISSEI51` everywhere
 with your own GitHub username before publishing.
 
 Copy `.npmrc.example` to `.npmrc` and provide a token with the `read:packages`
 scope:
 
 ```ini
-@GITHUB_USERNAME:registry=https://npm.pkg.github.com
+@issei51:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
@@ -135,7 +135,7 @@ Then:
 
 ```bash
 export GITHUB_TOKEN=ghp_your_token_here
-npx @GITHUB_USERNAME/readme-casino
+npx @issei51/las-vegas-readme
 ```
 
 **Never commit `.npmrc` or a token.** `.npmrc` is already in `.gitignore`.
@@ -166,7 +166,7 @@ npm pack
 mkdir /tmp/readme-casino-demo
 cd /tmp/readme-casino-demo
 echo "# Original README" > README.md
-npx /path/to/GITHUB_USERNAME-readme-casino-1.0.0.tgz
+npx /path/to/issei51-las-vegas-readme-1.0.0.tgz
 ```
 
 ---

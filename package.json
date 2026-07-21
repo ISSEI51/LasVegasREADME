@@ -28,6 +28,14 @@
     "test:watch": "vitest",
     "prepublishOnly": "npm run test && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ISSEI51/LasVegasREADME.git"
+  },
+  "homepage": "https://github.com/ISSEI51/LasVegasREADME#readme",
+  "bugs": {
+    "url": "https://github.com/ISSEI51/LasVegasREADME/issues"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
