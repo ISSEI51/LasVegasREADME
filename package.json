@@ -1,0 +1,41 @@
+{
+  "name": "@issei51/las-vegas-readme",
+  "version": "1.0.0",
+  "description": "Turn any respectable GitHub repository into an unreadable Las Vegas casino.",
+  "keywords": [
+    "readme",
+    "casino",
+    "vegas",
+    "svg",
+    "cli",
+    "generator",
+    "jackpot"
+  ],
+  "type": "module",
+  "bin": {
+    "readme-casino": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "license": "MIT"
+}
